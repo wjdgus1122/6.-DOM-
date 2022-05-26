@@ -15,12 +15,42 @@
 
     <script>
 
+        // 1. 
+        // const boxEl_1 = document.querySelector('.box:nth-child(1)')
+        // const boxEl_2 = document.querySelector('.box:nth-child(2)')
+        // const boxEl_3 = document.querySelector('.box:nth-child(3)')
+        // const boxEl_4 = document.querySelector('.box:nth-child(4)')
+
+        // boxEl_1.setAttribute('data-id', 1)
+        // boxEl_2.setAttribute('data-id', 2)
+        // boxEl_3.setAttribute('data-id', 3)
+        // boxEl_4.setAttribute('data-id', 4)
+
+        // 2.
+        // const boxAll = document.querySelectorAll('.box')
+        // boxAll[0].setAttribute('data-id', 0)
+        // boxAll[1].setAttribute('data-id', 1)
+        // boxAll[2].setAttribute('data-id', 2)
+        // boxAll[3].setAttribute('data-id', 3)
+
+        // 3.
+        // const boxAll = document.querySelectorAll('.box')
+        // for(let i = 0; i<= boxAll.length; i++){
+        //     boxAll[i].setAttribute('data-id', i)
+        // }
+
+        // for (var i = 1; i<=4; i++){
+        //     const selc_2 = document.querySelector(`.box:nth-child(${i})`)
+        //     selc_2.setAttribute('data-id',  `${i}`)
+        // }
         
-        for (var i = 1; i<=4; i++){
-            const selc_2 = document.querySelector(`.box:nth-child(${i})`)
-            selc_2.setAttribute('data-id',  `${i}`)
+        const dom = document.querySelectorAll(`.box`)
+
+        for(var i = 0; i<=dom.length-1; i++){
+            dom[i].setAttribute('data-id', i+1)
         }
-        
+
+
 
     </script>
     
